@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model_architecture/scoped_models/home_model.dart';
-import "package:scoped_model_architecture/ui/base_view.dart";
+import 'package:scoped_model_architecture/ui/views/base_view.dart';
 
-// Displays the view for HomeModel.
-class TemplateView extends StatelessWidget {
+// Snippet for Template of a View widget.
+class Template extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseView<HomeModel> (

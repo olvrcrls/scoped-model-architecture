@@ -10,11 +10,12 @@ class HomeModel extends BaseModel {
   // This will change the title to "Saving Data.."
   // after 2 seconds of delay it will change to
   // "Data saved.."
-  Future saveData() async {
+  Future<bool> saveData() async {
     setState(ViewState.Busy);
     title = "Saving Data...";
     await storageService.saveData();
     title = "Data saved.";
     setState(ViewState.Retrieved);
+    return true;
   }
 }
