@@ -17,7 +17,7 @@ class HomeView extends StatelessWidget {
           floatingActionButton: FloatingActionButton(onPressed: () async {
             var result = await model.saveData();
             if (result) {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SuccessView()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SuccessView(title: "Duplicated text.")));
             } else {
               Navigator.push(context, MaterialPageRoute(builder: (context) => ErrorView()));
             }

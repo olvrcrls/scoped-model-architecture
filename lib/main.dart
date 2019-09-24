@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model_architecture/service_locator.dart';
-import 'package:scoped_model_architecture/ui/home_view.dart';
+import 'package:scoped_model_architecture/ui/views/home_view.dart';
 
 
 void main () {
